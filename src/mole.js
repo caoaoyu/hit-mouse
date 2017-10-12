@@ -22,6 +22,9 @@ var Mole = (function() {
         if (this.isActive) return
         this.isActive = true;
         this.isShow = true;
+        this.type = Math.random() < 0.3 ? 1 : 2;
+        this.normalState.skin = "comp/mouse_normal_" + this.type + ".png";
+        this.hitState.skin = "comp/mouse_hit_" + this.type + ".png";
         this.normalState.y = this.downY;
         this.normalState.visible = true;
         Laya.Tween.to(this.normalState, {y: this.upY}, 500, Laya.Ease.backOut, Laya.Handler.create(this, this.showComplete))
