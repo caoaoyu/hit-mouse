@@ -1,12 +1,17 @@
 var Mole = (function() {
-    function Mole(normalState, hitState, downY, hitCallBackHd, scoreNumber) {
+    function Mole(normalState, hitState, scoreTextState, scoreLostState, downY, hitCallBackHd, scoreNumber) {
         this.normalState = normalState;
         this.hitState = hitState;
         this.downY = downY;
         this.upY = this.normalState.y;
         this.normalState.on(Laya.Event.CLICK, this, this.hit);
         this.hitCallBackHd = hitCallBackHd;
+
         this.scoreNumber = scoreNumber;
+        this.scoreTextState = scoreTextState
+        this.scoreLostState = scoreLostState
+        this.scoreTextY = this.scoreTextState.y;
+
         this.reset();
     };
 
@@ -18,8 +23,9 @@ var Mole = (function() {
         this.isHit = false;
         this.hitState.visible = false;
         this.normalState.visible = false;
+        this.scoreTextState.visible = false;
+        this.scoreLostState.visible = false;
         this.scoreNumber.dataSource = { "item9": { visible: true, index: 0 } }
-
     }
 
     _proto.show = function () {
@@ -57,7 +63,26 @@ var Mole = (function() {
             this.hitState.visible = true;
             this.hitCallBackHd.runWith(this.type);
             Laya.timer.once(500, this, this.reset);
+            this.showScore();
         }
     }
+
+      _proto.showScore = function () {
+          this.scoreTextState.y = this.scoreTextY + 30;
+          this.scoreState = this.type === 2 ? this.scoreTextState : this.scoreLostState;
+          this.scoreState.visible = true;
+          this.scoreState.scale(0, 0);
+
+          Laya.Tween.to(
+              this.scoreState,
+              {
+                  y: this.scoreTextY,
+                  scaleX: 1,
+                  scaleY: 1
+                },
+              300,
+              Laya.Ease.backOut,
+            )
+      }
     return Mole;
 })();

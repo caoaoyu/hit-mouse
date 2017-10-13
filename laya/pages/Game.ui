@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":161,
+    "selectedBox":104,
+    "selecteID":180,
     "props":{"x":0,"width":800,"sceneColor":"#ffffff","height":600},
     "nodeParent":-1,
     "label":"View",
@@ -77,6 +77,32 @@
                     "compId":5,
                     "child":[
                         ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":9,"x":22,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":6,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":162,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":8,"x":26,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":6,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":179,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -127,6 +153,32 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":107,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":7,"x":27,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":104,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":163,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":7,"x":31,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":104,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":180,
                     "child":[
                         ]
                 }]
@@ -182,6 +234,32 @@
                     "compId":111,
                     "child":[
                         ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":7,"x":64,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":108,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":164,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":7,"x":68,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":108,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":181,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -216,6 +294,7 @@
                     "props":{"y":15,"x":4,"skin":"comp/mouse_hit_1.png","name":"hit"},
                     "nodeParent":112,
                     "label":"Image(hit)",
+                    "isOpen":true,
                     "isDirectory":false,
                     "isAniNode":true,
                     "hasChild":false,
@@ -233,6 +312,32 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":115,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":13,"x":21,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":112,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":165,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":12,"x":26,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":112,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":182,
                     "child":[
                         ]
                 }]
@@ -269,6 +374,7 @@
                     "props":{"y":16,"x":5,"skin":"comp/mouse_hit_1.png","name":"hit"},
                     "nodeParent":116,
                     "label":"Image(hit)",
+                    "isOpen":true,
                     "isDirectory":false,
                     "isAniNode":true,
                     "hasChild":false,
@@ -286,6 +392,32 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":119,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":6,"x":29,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":116,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":167,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":5,"x":34,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":116,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":183,
                     "child":[
                         ]
                 }]
@@ -341,6 +473,32 @@
                     "compId":123,
                     "child":[
                         ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":5,"x":22,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":120,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":172,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":5,"x":27,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":120,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":184,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -392,6 +550,32 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":127,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":-6,"x":24,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":124,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":173,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":-6,"x":29,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":124,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":185,
                     "child":[
                         ]
                 }]
@@ -447,6 +631,32 @@
                     "compId":131,
                     "child":[
                         ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":1,"x":17,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":128,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":174,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":1,"x":22,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":128,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":186,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -498,6 +708,32 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":135,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":8,"x":25,"width":74,"text":"+10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreText","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":132,
+                    "label":"Text(scoreText)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":175,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Text",
+                    "props":{"y":8,"x":29,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "nodeParent":132,
+                    "label":"Text(scoreLost)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":187,
                     "child":[
                         ]
                 }]

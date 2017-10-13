@@ -11,7 +11,10 @@ var Game = (function(_super){
             this.box = this.getChildByName("item" + i);
             this.mole = new Mole(
                 this.box.getChildByName("normal"),
-                this.box.getChildByName("hit"), 21,
+                this.box.getChildByName("hit"),
+                this.box.getChildByName("scoreText"),
+                this.box.getChildByName("scoreLost"),
+                21,
                 this.hitCallBackHd,
                 this.scoreNumber
              );
