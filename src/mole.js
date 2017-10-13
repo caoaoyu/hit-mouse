@@ -1,11 +1,12 @@
 var Mole = (function() {
-    function Mole(normalState, hitState, downY) {
+    function Mole(normalState, hitState, downY, hitCallBackHd) {
         this.normalState = normalState;
         this.hitState = hitState;
         this.downY = downY;
         this.upY = this.normalState.y;
-        this.reset();
         this.normalState.on(Laya.Event.CLICK, this, this.hit);
+        this.hitCallBackHd = hitCallBackHd
+        this.reset();
     };
 
     var _proto = Mole.prototype;
@@ -18,6 +19,7 @@ var Mole = (function() {
         this.isHit = false;
 
     }
+
     _proto.show = function () {
         if (this.isActive) return
         this.isActive = true;
@@ -30,17 +32,20 @@ var Mole = (function() {
         Laya.Tween.to(this.normalState, {y: this.upY}, 500, Laya.Ease.backOut, Laya.Handler.create(this, this.showComplete))
 
     }
+
     _proto.showComplete = function () {
         if (this.isActive && !this.isHit) {
             Laya.timer.once(2000, this, this.hide)
         }
     }
+
     _proto.hide = function () {
         if(this.isShow && !this.isHit){
             this.isShow = false;
             Laya.Tween.to(this.normalState, { y: this.downY }, 200, Laya.Ease.backIn, Laya.Handler.create(this, this.reset))
         }
     }
+
     _proto.hit = function () {
         if (this.isShow && !this.isHit) {
             this.isShow = false;
@@ -48,6 +53,7 @@ var Mole = (function() {
             Laya.timer.clear(this, this.hide);
             this.normalState.visible = false;
             this.hitState.visible = true;
+            this.hitCallBackHd.runWith(this.type);
             Laya.timer.once(500, this, this.reset);
         }
     }
