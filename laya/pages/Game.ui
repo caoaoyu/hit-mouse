@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":104,
-    "selecteID":180,
+    "selectedBox":108,
+    "selecteID":110,
     "props":{"x":0,"width":800,"sceneColor":"#ffffff","height":600},
     "nodeParent":-1,
     "label":"View",
@@ -94,7 +94,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":8,"x":26,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":8,"x":26,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":6,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,
@@ -172,7 +172,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":7,"x":31,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":7,"x":31,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":104,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,
@@ -251,7 +251,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":7,"x":68,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":7,"x":68,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":108,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,
@@ -331,7 +331,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":12,"x":26,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":12,"x":26,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":112,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,
@@ -411,7 +411,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":5,"x":34,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":5,"x":34,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":116,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,
@@ -490,7 +490,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":5,"x":27,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":5,"x":27,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":120,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,
@@ -569,7 +569,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":-6,"x":29,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":-6,"x":29,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":124,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,
@@ -648,7 +648,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":1,"x":22,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":1,"x":22,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":128,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,
@@ -727,7 +727,7 @@
                 {
                     "x":30,
                     "type":"Text",
-                    "props":{"y":8,"x":29,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#ee650b","bold":true,"align":"center"},
+                    "props":{"y":8,"x":29,"width":74,"text":"-10","strokeColor":"#e32622","stroke":1,"pivotY":0.5,"pivotX":0.5,"name":"scoreLost","italic":true,"height":38,"fontSize":36,"font":"Helvetica","color":"#c1200a","bold":true,"align":"center"},
                     "nodeParent":132,
                     "label":"Text(scoreLost)",
                     "isDirectory":false,

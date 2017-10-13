@@ -66,7 +66,11 @@ var Game = (function(_super){
     _proto.gameOver = function () {
         this.hammer.hammerEnd();
         Laya.timer.clear(this, this.onLoop)
-        console.log("over")
+
+        index.gameOver = new GameOver(this.score);
+        index.gameOver.centerX = 0;
+        index.gameOver.centerY =  30;
+        Laya.stage.addChild(index.gameOver);
     }
     return Game;
 })(ui.GameUI)

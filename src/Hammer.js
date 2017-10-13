@@ -7,6 +7,7 @@ var Hammer = function (_super) {
     var _proto = Hammer.prototype;
 
     _proto.hammerStart = function () {
+        console.log(this.hit)
         Laya.Mouse.hide();
         Laya.stage.on(Laya.Event.MOUSE_DOWN, this, this.onMouseDown)
         Laya.stage.on(Laya.Event.MOUSE_MOVE, this, this.onMouseMove)
@@ -21,10 +22,11 @@ var Hammer = function (_super) {
     }
 
     _proto.hammerEnd = function () {
+        this.hit.visible = false;
         Laya.Mouse.show();
         Laya.stage.off(Laya.Event.MOUSE_DOWN, this, this.onMouseDown)
         Laya.stage.off(Laya.Event.MOUSE_MOVE, this, this.onMouseMove)
     }
 
     return Hammer;
-}(ui.hammerUI);
+}(ui.HammerUI);
