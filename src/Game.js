@@ -21,6 +21,10 @@ var Game = (function(_super){
             this.moles.push(this.mole);
         }
 
+        this.hammer = new Hammer()
+        this.addChild(this.hammer);
+        this.hammer.hammerStart();
+
         Laya.timer.loop(1000, this, this.onLoop);
     }
     Laya.class(Game, "Game", _super)
@@ -60,6 +64,7 @@ var Game = (function(_super){
     }
 
     _proto.gameOver = function () {
+        this.hammer.hammerEnd();
         Laya.timer.clear(this, this.onLoop)
         console.log("over")
     }
