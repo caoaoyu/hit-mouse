@@ -2,14 +2,19 @@ var Game = (function(_super){
     function Game() {
         Game.super(this);
         this.moles = [];
-         this.molesNum = 9;
+        this.molesNum = 9;
         this.score = 0;
         this.timeBar.value = 1;
         this.hitCallBackHd = Laya.Handler.create(this, this.setScore, null, false)
         
         for(var i = 0; i < this.molesNum; i++) {
             this.box = this.getChildByName("item" + i);
-            this.mole = new Mole(this.box.getChildByName("normal"), this.box.getChildByName("hit"), 10, this.hitCallBackHd);
+            this.mole = new Mole(
+                this.box.getChildByName("normal"),
+                this.box.getChildByName("hit"), 21,
+                this.hitCallBackHd,
+                this.scoreNumber
+             );
             this.moles.push(this.mole);
         }
 
@@ -38,11 +43,16 @@ var Game = (function(_super){
     _proto.updateScoreUI = function () {
         this.data = {};
         this.temp = this.score;
+        this.numsLength = (this.score).toString().length
         
-        for(var i = 9; i >= 0; i--) {
-            this.data["item" + i] = {index: Math.floor(this.temp % 10)}
+        for(var i = 0; i < this.numsLength; i++) {
+            this.data["item" + (9 - i)] = {
+                visible: true,
+                index: Math.floor(this.temp % 10),
+            }
             this.temp /= 10;
         }
+
         this.scoreNumber.dataSource = this.data;
     }
 

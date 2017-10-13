@@ -1,22 +1,24 @@
 var Mole = (function() {
-    function Mole(normalState, hitState, downY, hitCallBackHd) {
+    function Mole(normalState, hitState, downY, hitCallBackHd, scoreNumber) {
         this.normalState = normalState;
         this.hitState = hitState;
         this.downY = downY;
         this.upY = this.normalState.y;
         this.normalState.on(Laya.Event.CLICK, this, this.hit);
-        this.hitCallBackHd = hitCallBackHd
+        this.hitCallBackHd = hitCallBackHd;
+        this.scoreNumber = scoreNumber;
         this.reset();
     };
 
     var _proto = Mole.prototype;
 
     _proto.reset = function () {
-        this.normalState.visible = false;
-        this.hitState.visible = false;
         this.isActive = false;
         this.isShow = false;
         this.isHit = false;
+        this.hitState.visible = false;
+        this.normalState.visible = false;
+        this.scoreNumber.dataSource = { "item9": { visible: true, index: 0 } }
 
     }
 
