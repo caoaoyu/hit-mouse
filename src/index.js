@@ -1,6 +1,12 @@
 (function(){
     (function(index) {
         Laya.init(800, 600, Laya.WebGL)
+
+        Laya.stage.scaleMode = Laya.Stage.SCALE_NOSCALE;
+        Laya.stage.alignV = Laya.Stage.ALIGN_MIDDLE;
+        Laya.stage.alignH = Laya.Stage.ALIGN_CENTER;
+        Laya.stage.screenMode = Laya.Stage.SCREEN_HORIZONTAL;
+
         Laya.stage.bgColor = "#ffcccc"
         Laya.loader.load("res/atlas/comp.json", Laya.Handler.create(this, onloaded), null, Laya.Loader.ATLAS);
     })();

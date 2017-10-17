@@ -28,7 +28,7 @@ var Game = (function(_super){
     var _proto = Game.prototype;
 
     _proto.onLoop = function() {
-        this.timeBar.value -= (1 / 5);
+        this.timeBar.value -= (1 / 90);
 
         if (this.timeBar.value <= 0) return this.gameOver();
 
@@ -59,6 +59,13 @@ var Game = (function(_super){
         this.data = {};
         this.temp = this.score;
         this.numsLength = (this.score).toString().length
+
+        for(var i = 0; i < 9 - this.numsLength; i ++) {
+            this.data["item" + (9 - i)] = {
+                visible: false,
+                index: 0,
+            }
+        }
         
         for(var i = 0; i < this.numsLength; i++) {
             this.data["item" + (9 - i)] = {
