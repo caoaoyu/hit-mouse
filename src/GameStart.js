@@ -9,6 +9,7 @@ var GameStart = function (_super) {
     _proto.onString = function () {
         this.removeSelf();
         index.game = new Game();
+        index.game.gameReset();
         Laya.stage.addChild(index.game)
     }
     return GameStart;

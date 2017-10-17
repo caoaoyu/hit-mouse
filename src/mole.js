@@ -25,7 +25,7 @@ var Mole = (function() {
         this.normalState.visible = false;
         this.scoreTextState.visible = false;
         this.scoreLostState.visible = false;
-        this.scoreNumber.dataSource = { "item9": { visible: true, index: 0 } }
+        this.scoreNumber.dataSource = { "item9": { index: 0, visible: true } }
     }
 
     _proto.show = function () {

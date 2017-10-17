@@ -3,8 +3,6 @@ var Game = (function(_super){
         Game.super(this);
         this.moles = [];
         this.molesNum = 9;
-        this.score = 0;
-        this.timeBar.value = 1;
         this.hitCallBackHd = Laya.Handler.create(this, this.setScore, null, false)
         
         for(var i = 0; i < this.molesNum; i++) {
@@ -23,21 +21,31 @@ var Game = (function(_super){
 
         this.hammer = new Hammer()
         this.addChild(this.hammer);
-        this.hammer.hammerStart();
-
-        Laya.timer.loop(1000, this, this.onLoop);
+        this.hammer.visible = false;
     }
     Laya.class(Game, "Game", _super)
 
     var _proto = Game.prototype;
 
     _proto.onLoop = function() {
-        this.timeBar.value -= (1 / 90);
+        this.timeBar.value -= (1 / 5);
 
         if (this.timeBar.value <= 0) return this.gameOver();
 
         this.index = Math.floor(Math.random()*this.molesNum)
         this.moles[this.index].show();
+    }
+    _proto.gameReset = function () {
+        this.score = 0;
+        this.updateScoreUI();
+
+        this.timeBar.value = 1;
+
+        this.hammer.visible = true;
+        this.hammer.hammerStart();
+
+         Laya.timer.loop(1000, this, this.onLoop);
+
     }
 
     _proto.setScore = function (type) {
@@ -64,12 +72,14 @@ var Game = (function(_super){
     }
 
     _proto.gameOver = function () {
-        this.hammer.hammerEnd();
         Laya.timer.clear(this, this.onLoop)
+        this.hammer.visible = false;
+        this.hammer.hammerEnd();
 
-        index.gameOver = new GameOver(this.score);
+        index.gameOver = new GameOver();
         index.gameOver.centerX = 0;
         index.gameOver.centerY =  30;
+        index.gameOver.updateOverScore(this.score)
         Laya.stage.addChild(index.gameOver);
     }
     return Game;

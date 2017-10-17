@@ -1,8 +1,6 @@
 var GameOver = function (_super) {
-    function GameOver(nums) {
+    function GameOver() {
         GameOver.super(this);
-        this.num = nums;
-        this.updateOverScore();
         this.scoreOver.centerX = 0;
         this.againBtn.on(Laya.Event.CLICK, this, this.onAgainGame)
     }
@@ -11,12 +9,16 @@ var GameOver = function (_super) {
 
     _proto.onAgainGame = function () {
         this.removeSelf();
-         index.game = new Game();
-         Laya.stage.addChild(index.game)
+        index.game.removeSelf();
+
+        index.game = new Game();
+        index.game.gameReset();
+        Laya.stage.addChild(index.game)
     }
 
-    _proto.updateOverScore = function () {
+    _proto.updateOverScore = function (nums) {
         this.data = {};
+        this.num = nums;
         this.temp = this.num;
         this.numsLength = (this.num).toString().length
         
@@ -29,7 +31,6 @@ var GameOver = function (_super) {
         }
         this.scoreOver.dataSource = this.data;
     }
-
 
     return GameOver;
 }(ui.GameOverUI);
