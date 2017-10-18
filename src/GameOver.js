@@ -9,10 +9,12 @@ var GameOver = function (_super) {
 
     _proto.onAgainGame = function () {
         this.removeSelf();
+        Laya.SoundManager.stopAllSound();
         index.game.removeSelf();
 
         index.game = new Game();
         index.game.gameReset();
+        Laya.SoundManager.playMusic("sounds/bg-music.mp3")
         Laya.stage.addChild(index.game)
     }
 
@@ -30,6 +32,15 @@ var GameOver = function (_super) {
             this.temp /= 10;
         }
         this.scoreOver.dataSource = this.data;
+    }
+
+    _proto.onOverMusic = function (nums) {
+        if(nums <= 50) {
+            Laya.SoundManager.playSound("sounds/failure.mp3")
+            return;
+        }
+        Laya.SoundManager.playSound("sounds/victory.mp3")
+        return
     }
 
     return GameOver;

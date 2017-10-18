@@ -25,3 +25,8 @@ P D8515507 progress_time.png
 R 7B01914E score_1.png
 R 2B3A1D07 score_2.png
 P 202C5525 total Score.png
+D sounds
+R 5ED47A73 bg-music.mp3
+R 8169980F failure.mp3
+R 6E491C50 hit-music.mp3
+R 21B8B433 victory.mp3

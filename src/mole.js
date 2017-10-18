@@ -58,6 +58,7 @@ var Mole = (function() {
         if (this.isShow && !this.isHit) {
             this.isShow = false;
             this.isHit = true;
+            Laya.SoundManager.playSound("sounds/hit-music.mp3")
             Laya.timer.clear(this, this.hide);
             this.normalState.visible = false;
             this.hitState.visible = true;

@@ -4,6 +4,7 @@ var Game = (function(_super){
         this.moles = [];
         this.molesNum = 9;
         this.hitCallBackHd = Laya.Handler.create(this, this.setScore, null, false)
+        // Laya.SoundManager.playMusic("sounds/bg-music.mp3")
         
         for(var i = 0; i < this.molesNum; i++) {
             this.box = this.getChildByName("item" + i);
@@ -28,7 +29,7 @@ var Game = (function(_super){
     var _proto = Game.prototype;
 
     _proto.onLoop = function() {
-        this.timeBar.value -= (1 / 90);
+        this.timeBar.value -= (1 / 20);
 
         if (this.timeBar.value <= 0) return this.gameOver();
 
@@ -83,10 +84,13 @@ var Game = (function(_super){
         this.hammer.visible = false;
         this.hammer.hammerEnd();
 
+        Laya.SoundManager.stopMusic();
+
         index.gameOver = new GameOver();
         index.gameOver.centerX = 0;
         index.gameOver.centerY =  30;
         index.gameOver.updateOverScore(this.score)
+        index.gameOver.onOverMusic(this.score)
         Laya.stage.addChild(index.gameOver);
     }
     return Game;
